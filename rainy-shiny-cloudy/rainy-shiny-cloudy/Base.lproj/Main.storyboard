@@ -38,7 +38,6 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, March 19, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHL-NS-zj6">
                                                         <rect key="frame" x="0.0" y="0.0" width="196" height="21"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="196" id="5Hp-da-Rok"/>
                                                             <constraint firstAttribute="height" constant="21" id="g9I-6E-7vQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
@@ -48,7 +47,6 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80.3°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbC-mt-th2">
                                                         <rect key="frame" x="0.0" y="51" width="196" height="48"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="196" id="BKM-bk-lXR"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="196" id="hfW-9X-CXb"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
@@ -59,7 +57,6 @@
                                                         <rect key="frame" x="0.0" y="129" width="196" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="75W-Db-hQw"/>
-                                                            <constraint firstAttribute="width" constant="196" id="GBa-mg-qoc"/>
                                                             <constraint firstAttribute="height" constant="21" id="rAG-R1-g7R"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
@@ -84,7 +81,6 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="CCH-pf-1aO"/>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="ebm-KI-6CP"/>
                                                             <constraint firstAttribute="height" constant="21" id="v6e-3g-4vD"/>
-                                                            <constraint firstAttribute="width" constant="100" id="vbW-hZ-CuK"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,14 +104,14 @@
                                 <rect key="frame" x="0.0" y="314" width="375" height="353"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="428-2C-3YB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="428-2C-3YB" customClass="WeatherCell" customModule="rainy_shiny_cloudy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="428-2C-3YB" id="mB8-cj-XG0">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="deB-Zj-H1F">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="deB-Zj-H1F">
                                                     <rect key="frame" x="15" y="14" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="pfB-fL-8Ou"/>
@@ -123,9 +119,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJQ-9P-ZCP">
-                                                    <rect key="frame" x="73" y="14" width="100" height="20"/>
+                                                    <rect key="frame" x="73" y="14" width="59" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="dD8-XX-br0"/>
                                                         <constraint firstAttribute="height" constant="20" id="hfa-N0-uw4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
@@ -137,7 +132,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0B8-pS-Rsh"/>
                                                         <constraint firstAttribute="height" constant="20" id="Ete-vr-96d"/>
-                                                        <constraint firstAttribute="width" constant="100" id="ZwJ-8Z-dyT"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fKb-xK-bzQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
@@ -150,7 +144,6 @@
                                                         <constraint firstAttribute="height" constant="20" id="7Gx-lp-BtJ"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="CcD-Tb-NdE"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="aBB-oM-S68"/>
-                                                        <constraint firstAttribute="width" constant="100" id="igV-sB-zcO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -160,7 +153,6 @@
                                                     <rect key="frame" x="260" y="42" width="100" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="CaE-4y-xa7"/>
-                                                        <constraint firstAttribute="width" constant="100" id="Qqo-Sq-O7U"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Xcv-qd-aR4"/>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="ahf-de-EwT"/>
                                                         <constraint firstAttribute="height" constant="20" id="jm2-4Q-GWw"/>
@@ -171,13 +163,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="HDR-ub-vP0" firstAttribute="top" secondItem="bJQ-9P-ZCP" secondAttribute="bottom" constant="8" id="5nf-fX-g3e"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bJQ-9P-ZCP" secondAttribute="trailing" constant="20" symbolic="YES" id="626-Gb-f1M"/>
+                                                <constraint firstItem="kSX-sF-Zr3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mB8-cj-XG0" secondAttribute="leadingMargin" id="8na-oB-tSw"/>
                                                 <constraint firstItem="kSX-sF-Zr3" firstAttribute="trailing" secondItem="mB8-cj-XG0" secondAttribute="trailingMargin" id="PvE-PT-CRq"/>
                                                 <constraint firstItem="bJQ-9P-ZCP" firstAttribute="leading" secondItem="deB-Zj-H1F" secondAttribute="trailing" constant="8" id="WJ3-jK-nAj"/>
                                                 <constraint firstItem="kSX-sF-Zr3" firstAttribute="top" secondItem="mB8-cj-XG0" secondAttribute="topMargin" constant="2" id="a0Z-jJ-yux"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="deB-Zj-H1F" secondAttribute="bottom" constant="5" id="eOc-ux-alr"/>
+                                                <constraint firstItem="4IA-Ib-jdf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mB8-cj-XG0" secondAttribute="leadingMargin" id="gJ9-VG-onM"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HDR-ub-vP0" secondAttribute="trailing" constant="20" symbolic="YES" id="i2I-T5-QfW"/>
                                                 <constraint firstItem="HDR-ub-vP0" firstAttribute="leading" secondItem="deB-Zj-H1F" secondAttribute="trailing" constant="8" id="jWV-UO-KTw"/>
                                                 <constraint firstItem="bJQ-9P-ZCP" firstAttribute="top" secondItem="mB8-cj-XG0" secondAttribute="topMargin" constant="3" id="ljT-R8-k2Q"/>
                                                 <constraint firstItem="4IA-Ib-jdf" firstAttribute="top" secondItem="kSX-sF-Zr3" secondAttribute="bottom" constant="9" id="rVm-4H-0zn"/>
@@ -186,6 +182,13 @@
                                                 <constraint firstItem="deB-Zj-H1F" firstAttribute="leading" secondItem="mB8-cj-XG0" secondAttribute="leadingMargin" id="zcJ-i4-HT5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="bJQ-9P-ZCP" id="kfP-V7-QOR"/>
+                                            <outlet property="highTemp" destination="kSX-sF-Zr3" id="I4D-47-HgG"/>
+                                            <outlet property="lowTemp" destination="4IA-Ib-jdf" id="Tad-2X-4QD"/>
+                                            <outlet property="weatherIcon" destination="deB-Zj-H1F" id="S0X-YC-yaw"/>
+                                            <outlet property="weatherType" destination="HDR-ub-vP0" id="pVf-9g-ZwS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
